@@ -32,11 +32,11 @@ on:
 
 env:
   AWS_REGION: "us-east-1"
-  ECR_REPOSITORY: "app"
-  ECS_SERVICE: "app"
-  ECS_CLUSTER: "app"
-  ECS_TASK_DEFINITION: "ecs-task-def.json"
-  CONTAINER_NAME: "app"
+  ECR_REPOSITORY: "app"  # based on ecs resource setting in headversity_devops_infra
+  ECS_SERVICE: "app" # based on ecs resource setting in headversity_devops_infra
+  ECS_CLUSTER: "app" # based on ecs resource setting in headversity_devops_infra
+  ECS_TASK_DEFINITION: "ecs-task-def.json" # file describing ecs task
+  CONTAINER_NAME: "app" # based on ecs resource setting in headversity_devops_infra
 
 permissions:
   contents: read
